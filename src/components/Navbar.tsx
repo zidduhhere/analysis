@@ -1,10 +1,25 @@
 import React from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScroll = (id: string) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-900/50">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center border border-teal-500/30">
             <span className="text-teal-400 font-bold">H</span>
           </div>
@@ -16,30 +31,43 @@ const Navbar: React.FC = () => {
               TEAM DK70
             </span>
           </div>
-        </div>
+        </Link>
 
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-zinc-400">
-          <a href="#home" className="hover:text-teal-400 transition-colors">
-            Home
-          </a>
-          <a href="#about" className="hover:text-teal-400 transition-colors">
+          <Link
+            to="/secret-sauce"
+            className={`hover:text-teal-400 transition-colors ${
+              location.pathname.includes("/secret-sauce")
+                ? "bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20 text-teal-400 font-bold text-xs uppercase tracking-wide"
+                : ""
+            }`}
+          >
+            Secret Sauce
+          </Link>
+          <button
+            onClick={() => handleScroll("about")}
+            className="hover:text-teal-400 transition-colors bg-transparent border-none cursor-pointer"
+          >
             The Problem
-          </a>
-          <a
-            href="#user-analysis"
-            className="hover:text-teal-400 transition-colors"
+          </button>
+          <button
+            onClick={() => handleScroll("user-analysis")}
+            className="hover:text-teal-400 transition-colors bg-transparent border-none cursor-pointer"
           >
             User Analysis
-          </a>
-          <a href="#insights" className="hover:text-teal-400 transition-colors">
+          </button>
+          <button
+            onClick={() => handleScroll("insights")}
+            className="hover:text-teal-400 transition-colors bg-transparent border-none cursor-pointer"
+          >
             Insights
-          </a>
-          <a
-            href="#team-insights"
-            className="hover:text-teal-400 transition-colors"
+          </button>
+          <button
+            onClick={() => handleScroll("team-insights")}
+            className="hover:text-teal-400 transition-colors bg-transparent border-none cursor-pointer"
           >
             Team Vision
-          </a>
+          </button>
           <a
             href="https://chatgpt.com/share/69717cde-76f0-8009-b9b3-84953804ecbc"
             target="_blank"

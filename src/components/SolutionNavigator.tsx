@@ -145,10 +145,10 @@ const solutions = [
 
 const SolutionNavigator: React.FC = () => {
   return (
-    <section className="py-24 bg-zinc-50 text-zinc-900 border-t border-zinc-200">
+    <section className="py-24 bg-zinc-950 text-white border-t border-zinc-900">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight text-zinc-900 mb-2 uppercase">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-2 uppercase">
             Solution
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-500 mx-auto" />
@@ -158,23 +158,23 @@ const SolutionNavigator: React.FC = () => {
           {solutions.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-shadow border border-zinc-100 group"
+              className="flex flex-col items-center text-center p-6 bg-zinc-900/50 rounded-2xl shadow-xl hover:shadow-2xl transition-all border border-zinc-800 hover:border-zinc-700 group hover:-translate-y-1"
             >
-              <h3 className="text-lg font-black uppercase mb-6 tracking-wide border-b-2 border-transparent group-hover:border-zinc-900 transition-all pb-1">
+              <h3 className="text-lg font-black uppercase mb-6 tracking-wide border-b-2 border-transparent group-hover:border-teal-500 transition-all pb-1">
                 {item.title}
               </h3>
 
-              <div className="mb-6 p-4 bg-zinc-50 rounded-2xl group-hover:scale-105 transition-transform duration-300">
+              <div className="mb-6 p-4 bg-zinc-950 rounded-2xl group-hover:scale-105 transition-transform duration-300 border border-zinc-800">
                 {item.icon}
               </div>
 
-              <p className="text-sm text-zinc-600 leading-relaxed mb-8 flex-grow">
+              <p className="text-sm text-zinc-400 leading-relaxed mb-8 flex-grow">
                 {item.description}
               </p>
 
               <Link
                 to={item.path}
-                className="inline-flex items-center gap-2 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white text-xs font-bold uppercase tracking-widest rounded-full transition-colors shadow-lg shadow-blue-500/30"
+                className="inline-flex items-center gap-2 px-6 py-2 bg-zinc-800 hover:bg-teal-500 text-white hover:text-white text-xs font-bold uppercase tracking-widest rounded-full transition-all shadow-lg hover:shadow-teal-500/30"
               >
                 Click Here
                 <svg

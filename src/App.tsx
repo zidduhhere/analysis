@@ -7,6 +7,13 @@ import RoutinePage from "./pages/RoutinePage";
 import NudgesPage from "./pages/NudgesPage";
 import InsurancePage from "./pages/InsurancePage";
 
+import SecretSaucePage from "./pages/SecretSaucePage";
+import ScorePage from "./pages/secrets/ScorePage";
+import LocationPage from "./pages/secrets/LocationPage";
+import FoodPage from "./pages/secrets/FoodPage";
+import OffersPage from "./pages/secrets/OffersPage";
+import PreventionPage from "./pages/secrets/PreventionPage";
+
 function App() {
   return (
     <Router>
@@ -18,6 +25,13 @@ function App() {
           <Route path="/solution/routine" element={<RoutinePage />} />
           <Route path="/solution/nudges" element={<NudgesPage />} />
           <Route path="/solution/insurance" element={<InsurancePage />} />
+
+          <Route path="/secret-sauce" element={<SecretSaucePage />} />
+          <Route path="/secret-sauce/score" element={<ScorePage />} />
+          <Route path="/secret-sauce/location" element={<LocationPage />} />
+          <Route path="/secret-sauce/food" element={<FoodPage />} />
+          <Route path="/secret-sauce/offers" element={<OffersPage />} />
+          <Route path="/secret-sauce/prevention" element={<PreventionPage />} />
         </Routes>
         <Footer />
       </div>
