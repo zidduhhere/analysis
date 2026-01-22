@@ -1,25 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ProblemStatement from "./components/ProblemStatement";
-import Insights from "./components/Insights";
 import Footer from "./components/Footer";
-
-import TeamInsights from "./components/TeamInsights";
-import SurveyCharts from "./components/SurveyCharts";
+import Home from "./pages/Home";
+import AnalyzePage from "./pages/AnalyzePage";
+import RoutinePage from "./pages/RoutinePage";
+import NudgesPage from "./pages/NudgesPage";
+import InsurancePage from "./pages/InsurancePage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white font-sans selection:bg-teal-500/30">
-      <Navbar />
-      <main>
-        <Hero />
-        <ProblemStatement />
-        <Insights />
-        <SurveyCharts />
-        <TeamInsights />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-zinc-950 text-white font-sans selection:bg-teal-500/30">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/solution/analyze" element={<AnalyzePage />} />
+          <Route path="/solution/routine" element={<RoutinePage />} />
+          <Route path="/solution/nudges" element={<NudgesPage />} />
+          <Route path="/solution/insurance" element={<InsurancePage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
