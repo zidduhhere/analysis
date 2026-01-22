@@ -25,6 +25,12 @@ const Navbar: React.FC = () => {
           <a href="#about" className="hover:text-teal-400 transition-colors">
             The Problem
           </a>
+          <a
+            href="#user-analysis"
+            className="hover:text-teal-400 transition-colors"
+          >
+            User Analysis
+          </a>
           <a href="#insights" className="hover:text-teal-400 transition-colors">
             Insights
           </a>

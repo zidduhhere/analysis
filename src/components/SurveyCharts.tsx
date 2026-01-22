@@ -100,7 +100,7 @@ const SurveyCharts: React.FC = () => {
                   paddingAngle={5}
                   dataKey="value"
                 >
-                  {routineData.map((entry, index) => (
+                  {routineData.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}
@@ -141,7 +141,7 @@ const SurveyCharts: React.FC = () => {
                   outerRadius={80}
                   dataKey="value"
                 >
-                  {healthCostConcernData.map((entry, index) => (
+                  {healthCostConcernData.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}
@@ -162,7 +162,7 @@ const SurveyCharts: React.FC = () => {
                   stroke="#52525b"
                   fontSize={10}
                   interval={0}
-                  tick={{ angle: -45, textAnchor: "end" }}
+                  tick={{ textAnchor: "end" }}
                   height={60}
                 />
                 <YAxis stroke="#52525b" fontSize={10} />
@@ -190,7 +190,7 @@ const SurveyCharts: React.FC = () => {
                   outerRadius={80}
                   dataKey="value"
                 >
-                  {consistencyData.map((entry, index) => (
+                  {consistencyData.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}
@@ -257,7 +257,7 @@ const SurveyCharts: React.FC = () => {
                   paddingAngle={5}
                   dataKey="value"
                 >
-                  {consistencyBenefitsData.map((entry, index) => (
+                  {consistencyBenefitsData.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}
