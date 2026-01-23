@@ -15,6 +15,8 @@ import OffersPage from "./pages/secrets/OffersPage";
 import PreventionPage from "./pages/secrets/PreventionPage";
 import BusinessModelPage from "./pages/BusinessModelPage";
 import RoadmapPage from "./pages/RoadmapPage";
+import BusinessPlanPage from "./pages/BusinessPlanPage";
+import FundUtilisationPage from "./pages/FundUtilisationPage";
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
 
           <Route path="/business-model" element={<BusinessModelPage />} />
           <Route path="/milestones" element={<RoadmapPage />} />
+          <Route path="/business-plan" element={<BusinessPlanPage />} />
+          <Route path="/fund-utilisation" element={<FundUtilisationPage />} />
         </Routes>
         <Footer />
       </div>
