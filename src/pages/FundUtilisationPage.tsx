@@ -77,7 +77,10 @@ const FundUtilisationPage: React.FC = () => {
                   color: "#fff",
                 }}
                 itemStyle={{ color: "#fff" }}
-                formatter={(value: number) => [`${value}%`, "Allocation"]}
+                formatter={(value: number | string | undefined) => [
+                  `${value}%`,
+                  "Allocation",
+                ]}
               />
             </PieChart>
           </ResponsiveContainer>
@@ -101,7 +104,7 @@ const FundUtilisationPage: React.FC = () => {
               className="bg-zinc-900/50 rounded-2xl p-6 border border-zinc-800 hover:border-zinc-700 transition-colors flex gap-5 items-start group"
             >
               <div
-                className="w-16 h-16 rounded-xl flex-shrink-0 flex items-center justify-center text-white font-bold text-xl shadow-lg"
+                className="w-16 h-16 rounded-xl shrink-0 flex items-center justify-center text-white font-bold text-xl shadow-lg"
                 style={{ backgroundColor: item.color }}
               >
                 {item.value}%

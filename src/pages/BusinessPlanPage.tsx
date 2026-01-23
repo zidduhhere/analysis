@@ -15,7 +15,7 @@ const BusinessPlanPage: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Initial D2C */}
-        <div className="bg-gradient-to-b from-blue-600 to-blue-700 rounded-3xl p-8 text-white relative flex flex-col hover:scale-105 transition-transform duration-300 shadow-xl shadow-blue-900/20">
+        <div className="bg-linear-to-b from-blue-600 to-blue-700 rounded-3xl p-8 text-white relative flex flex-col hover:scale-105 transition-transform duration-300 shadow-xl shadow-blue-900/20">
           <div className="mb-6">
             <h2 className="text-3xl font-bold mb-4">Initial D2C</h2>
             <div className="w-12 h-1 bg-white/30 rounded-full mb-6"></div>
@@ -24,7 +24,7 @@ const BusinessPlanPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-6 flex-grow">
+          <div className="space-y-6 grow">
             <div className="bg-white/10 p-4 rounded-xl backdrop-blur-sm">
               <div className="text-sm opacity-75 mb-1">Hyphen Basic</div>
               <div className="text-2xl font-bold">
@@ -70,7 +70,7 @@ const BusinessPlanPage: React.FC = () => {
         </div>
 
         {/* Secondary B2B */}
-        <div className="bg-gradient-to-b from-blue-600 to-blue-700 rounded-3xl p-8 text-white relative flex flex-col hover:scale-105 transition-transform duration-300 shadow-xl shadow-blue-900/20">
+        <div className="bg-linear-to-b from-blue-600 to-blue-700 rounded-3xl p-8 text-white relative flex flex-col hover:scale-105 transition-transform duration-300 shadow-xl shadow-blue-900/20">
           <div className="mb-6">
             <h2 className="text-3xl font-bold mb-4">Secondary B2B</h2>
             <div className="w-12 h-1 bg-white/30 rounded-full mb-6"></div>
@@ -81,7 +81,7 @@ const BusinessPlanPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-6 flex-grow">
+          <div className="space-y-6 grow">
             <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20 text-center">
               <div className="text-4xl font-bold mb-2">₹50-₹150</div>
               <div className="text-xs font-bold uppercase tracking-wider opacity-80">
@@ -118,7 +118,7 @@ const BusinessPlanPage: React.FC = () => {
         </div>
 
         {/* Insurance Partnerships */}
-        <div className="bg-gradient-to-b from-blue-600 to-blue-700 rounded-3xl p-8 text-white relative flex flex-col hover:scale-105 transition-transform duration-300 shadow-xl shadow-blue-900/20">
+        <div className="bg-linear-to-b from-blue-600 to-blue-700 rounded-3xl p-8 text-white relative flex flex-col hover:scale-105 transition-transform duration-300 shadow-xl shadow-blue-900/20">
           <div className="mb-6">
             <h2 className="text-3xl font-bold mb-4">Insurance Partnerships</h2>
             <div className="w-12 h-1 bg-white/30 rounded-full mb-6"></div>
@@ -139,7 +139,7 @@ const BusinessPlanPage: React.FC = () => {
             </ul>
           </div>
 
-          <div className="space-y-6 flex-grow">
+          <div className="space-y-6 grow">
             <div className="border border-white/30 rounded-xl p-5 relative overflow-hidden">
               <div className="absolute top-0 left-0 bg-white/20 px-3 py-1 text-xs font-bold uppercase rounded-br-lg">
                 Pricing Model
