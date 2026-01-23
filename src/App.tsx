@@ -13,6 +13,7 @@ import LocationPage from "./pages/secrets/LocationPage";
 import FoodPage from "./pages/secrets/FoodPage";
 import OffersPage from "./pages/secrets/OffersPage";
 import PreventionPage from "./pages/secrets/PreventionPage";
+import BusinessModelPage from "./pages/BusinessModelPage";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
           <Route path="/secret-sauce/food" element={<FoodPage />} />
           <Route path="/secret-sauce/offers" element={<OffersPage />} />
           <Route path="/secret-sauce/prevention" element={<PreventionPage />} />
+
+          <Route path="/business-model" element={<BusinessModelPage />} />
         </Routes>
         <Footer />
       </div>

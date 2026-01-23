@@ -44,6 +44,16 @@ const Navbar: React.FC = () => {
           >
             Secret Sauce
           </Link>
+          <Link
+            to="/business-model"
+            className={`hover:text-teal-400 transition-colors ${
+              location.pathname === "/business-model"
+                ? "bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20 text-teal-400 font-bold text-xs uppercase tracking-wide"
+                : ""
+            }`}
+          >
+            Target Customers
+          </Link>
           <button
             onClick={() => handleScroll("about")}
             className="hover:text-teal-400 transition-colors bg-transparent border-none cursor-pointer"
