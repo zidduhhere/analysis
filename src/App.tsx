@@ -17,6 +17,7 @@ import BusinessModelPage from "./pages/BusinessModelPage";
 import RoadmapPage from "./pages/RoadmapPage";
 import BusinessPlanPage from "./pages/BusinessPlanPage";
 import FundUtilisationPage from "./pages/FundUtilisationPage";
+import SolutionPage from "./pages/SolutionPage";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/milestones" element={<RoadmapPage />} />
           <Route path="/business-plan" element={<BusinessPlanPage />} />
           <Route path="/fund-utilisation" element={<FundUtilisationPage />} />
+          <Route path="/solution" element={<SolutionPage />} />
         </Routes>
         <Footer />
       </div>
