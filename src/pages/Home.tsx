@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
-import ProblemStatement from "../components/ProblemStatement";
-import UserAnalysis from "../components/UserAnalysis";
-import SolutionNavigator from "../components/SolutionNavigator";
-import Insights from "../components/Insights";
-import SurveyCharts from "../components/SurveyCharts";
+import WhySection from "../components/WhySection";
+import HowSection from "../components/HowSection";
+import ForWhomSection from "../components/ForWhomSection";
 import TeamInsights from "../components/TeamInsights";
 
 const Home: React.FC = () => {
@@ -28,11 +26,9 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
-      <ProblemStatement />
-      <UserAnalysis />
-      <SolutionNavigator />
-      <Insights />
-      <SurveyCharts />
+      <WhySection />
+      <HowSection />
+      <ForWhomSection />
       <TeamInsights />
     </>
   );

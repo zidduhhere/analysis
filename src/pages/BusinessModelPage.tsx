@@ -6,7 +6,7 @@ const BusinessModelPage: React.FC = () => {
       <div className="mb-20 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 uppercase tracking-tight">
           Target{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-yellow-400">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-yellow-400">
             Customers
           </span>
         </h1>

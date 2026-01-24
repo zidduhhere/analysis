@@ -42,14 +42,14 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 flex-shrink-0"
+            className="flex items-center gap-2 shrink-0"
             onClick={() => setMobileMenuOpen(false)}
           >
             <div className="w-8 h-8 bg-teal-500/20 rounded-lg flex items-center justify-center border border-teal-500/30">
               <span className="text-teal-400 font-bold">H</span>
             </div>
             <div className="hidden sm:flex flex-col">
-              <span className="text-xl font-semibold tracking-tight text-white leading-none">
+              <span className="text-2xl font-black tracking-tighter text-white shrink-0 leading-none">
                 Hyphen
               </span>
               <span className="text-[10px] text-zinc-500 font-mono leading-none tracking-wider">

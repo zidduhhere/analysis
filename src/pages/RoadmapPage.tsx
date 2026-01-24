@@ -6,7 +6,7 @@ const RoadmapPage: React.FC = () => {
       <div className="mb-20 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 uppercase tracking-tight">
           Milestone &{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-400">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-yellow-400">
             Roadmap
           </span>
         </h1>
@@ -34,7 +34,7 @@ const RoadmapPage: React.FC = () => {
         </div>
 
         {/* Vertical line for Mobile */}
-        <div className="lg:hidden absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-yellow-400 opacity-30"></div>
+        <div className="lg:hidden absolute left-8 top-0 bottom-0 w-1 bg-linear-to-b from-blue-500 to-yellow-400 opacity-30"></div>
 
         <div className="space-y-12 lg:space-y-0 relative z-10 w-full max-w-5xl mx-auto min-h-[800px]">
           {/* 00: Ideation */}
