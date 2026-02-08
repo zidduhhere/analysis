@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="inline-block px-3 py-1 mb-6 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-medium text-teal-400 tracking-wide uppercase">
-            Hyphen • Team DK70
+            Hyphen
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-tight">
             Health designed for{" "}

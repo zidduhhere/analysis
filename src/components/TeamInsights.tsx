@@ -10,7 +10,7 @@ const TeamInsights: React.FC = () => {
         <div className="flex items-center gap-4 mb-10">
           <div className="h-px bg-zinc-800 flex-1" />
           <span className="text-zinc-500 font-mono text-xs tracking-widest uppercase">
-            Team DK70 Internal Notes
+            Internal Notes
           </span>
           <div className="h-px bg-zinc-800 flex-1" />
         </div>
@@ -73,9 +73,6 @@ const TeamInsights: React.FC = () => {
               protection. No more wasted premiums, no more unachievable goals.
               Just a system that works for you."
             </p>
-            <div className="mt-6 text-sm text-zinc-500 font-mono">
-              — TEAM DK70
-            </div>
           </div>
         </div>
       </div>

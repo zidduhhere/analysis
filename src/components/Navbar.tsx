@@ -52,9 +52,6 @@ const Navbar: React.FC = () => {
               <span className="text-2xl font-black tracking-tighter text-white shrink-0 leading-none">
                 Hyphen
               </span>
-              <span className="text-[10px] text-zinc-500 font-mono leading-none tracking-wider">
-                TEAM DK70
-              </span>
             </div>
           </Link>
 

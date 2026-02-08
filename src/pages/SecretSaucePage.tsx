@@ -17,6 +17,139 @@ const SecretSaucePage: React.FC = () => {
       </div>
 
       <div className="space-y-32">
+        {/* New Feature: Social Media Platform Evolution */}
+        <div className="mb-32">
+          <div className="text-center mb-16">
+            <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 mb-6">
+              <span className="text-blue-400 font-mono text-xs uppercase tracking-widest">
+                Platform Evolution
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Evolving into a{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
+                Social Media Platform
+              </span>
+            </h2>
+            <p className="text-zinc-400 text-lg max-w-3xl mx-auto">
+              We're building more than a health tracker. We're creating a
+              community-driven ecosystem where health becomes social, engaging,
+              and rewarding.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Card 1: Video & Story Telling */}
+            <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 group">
+              <div className="w-16 h-16 rounded-2xl bg-blue-500/20 border-2 border-blue-500/40 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-8 h-8 text-blue-400"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Video & Story Telling
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                We are promoting a culture of telling health stories,
+                participating in community events and make end people who have
+                the same routine and tastes as you.
+              </p>
+            </div>
+
+            {/* Card 2: Reducing Insurance Premium */}
+            <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 group">
+              <div className="w-16 h-16 rounded-2xl bg-purple-500/20 border-2 border-purple-500/40 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-8 h-8 text-purple-400"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Reducing Insurance Premium
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+                According to our health score{" "}
+                <span className="font-bold text-purple-400">HMPUI</span> the
+                insurance premium cost can be reduced. Which basically projects
+                itself into a form of{" "}
+                <span className="font-bold text-white">
+                  "Healthy Life Pays Less"
+                </span>
+                .
+              </p>
+              <p className="text-zinc-500 text-xs italic">
+                Which gives a good marketing side also.
+              </p>
+            </div>
+
+            {/* Card 3: HMPUI */}
+            <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 group">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-500/20 border-2 border-indigo-500/40 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <span className="text-2xl font-black text-indigo-400">
+                  HMPUI
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Health & Medical Process Utilisation Index Points
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                This is a scoring system which is used for the purpose of
+                insurance, health and more. This system works on the basis of{" "}
+                <span className="font-bold text-indigo-400">
+                  your diet, calorie-intake, physical activity, chronic disease
+                  history, medicine intakes and more.
+                </span>
+              </p>
+              <p className="text-zinc-500 text-xs italic mt-3">
+                Making a system similar to CIBIL.
+              </p>
+            </div>
+
+            {/* Card 4: Alice AI */}
+            <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 hover:border-teal-500/50 transition-all duration-300 group">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-teal-500/20">
+                <span className="text-2xl font-black text-white">G</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                <span className="text-teal-400">"Alice"</span> Our Proactive and
+                Food Recognition Model
+              </h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                Alice is our AI model which is your health partner and food
+                tracking assistant. Alice will be trained on{" "}
+                <span className="font-bold text-teal-400">
+                  Indian rural food data, making it capable of recognising
+                  Indian dish.
+                </span>
+              </p>
+              <p className="text-zinc-500 text-xs italic mt-3">
+                She is a proactive model capable of preventive-health care.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Feature 01: HMPUI Score */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1 relative">
